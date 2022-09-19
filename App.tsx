@@ -10,7 +10,7 @@ import {
 
 import { Background } from "./src/components/Background";
 
-import { Home } from "./src/screens/Home";
+import { Routes } from "./src/routes";
 import { Loading } from "./src/components/Loading";
 
 export default function App() {
@@ -28,7 +28,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fonstLoaded ? <Home /> : <Loading />}
+      {fonstLoaded ? <Routes /> : <Loading />}
     </Background>
   );
 }
